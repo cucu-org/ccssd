@@ -11,13 +11,79 @@ It addresses practical questions such as:
 
 «You don't have to be a hacker, but you should know when your device has been hacked.»
 
-Am I Being Monitored?
+## Table of Contents
+
+- [Am I Being Monitored?](#am-i-being-monitored)
+- [Am I Being Tracked?](#am-i-being-tracked)
+- [My Device Is Being Monitored by Malware](#my-device-is-being-monitored-by-malware)
+- [Can Malware Steal All of My Files?](#can-malware-steal-all-of-my-files)
+- [Isolating Untrusted Apps](#isolating-untrusted-apps)
+
+## Am I Being Monitored?
 
 First, determine whether your online accounts are being accessed by someone else, or whether your device itself has been compromised. These are two different problems.
 
-My Device Is Being Monitored by Malware
+### Checking Your Accounts
 
-If malware is secretly recording your screen, taking photos, or listening through the microphone, one possible symptom is unusual overheating or battery drain. However, these are only warning signs and are not reliable indicators. Many forms of malware are designed to run quietly and may not noticeably affect performance.
+To determine if your accounts are being accessed without authorization:
+
+1. **Review account activity logs** - Most services like Google, Facebook, and Microsoft provide security checkups and activity logs
+2. **Check connected devices and sessions** - Look for unfamiliar devices or locations accessing your accounts
+3. **Review connected apps** - Verify which third-party applications have access to your account
+4. **Check recovery options** - Ensure your email and phone number haven't been changed without your permission
+
+### Signs of Account Compromise
+
+- Unexpected password reset emails
+- Login attempts from unfamiliar locations
+- Changed security settings you didn't authorize
+- Friends reporting receiving messages from your account
+- Unfamiliar apps connected to your account
+
+## Am I Being Tracked?
+
+Tracking can occur at multiple levels and through various methods. Understanding these will help you identify if you're being tracked.
+
+### Digital Tracking Methods
+
+**Location Tracking:**
+- GPS tracking through your device's location services
+- Cell tower triangulation by your mobile carrier
+- WiFi-based location services
+- Tracking through social media check-ins and posts
+
+**Online Tracking:**
+- Website cookies and tracking pixels
+- Browser fingerprinting
+- Advertising trackers across websites
+- Social media tracking across the web
+
+**App-Based Tracking:**
+- Apps requesting location permissions
+- Background location tracking even when the app is closed
+- Device identifiers being sent to tracking services
+- Analytics and telemetry in apps
+
+### How to Check What's Tracking You
+
+1. **Review app permissions** - Check which apps have access to your location, contacts, camera, and microphone
+2. **Check privacy settings** - Review location sharing settings in your device settings and individual apps
+3. **Review connected services** - Check which apps and websites have permission to access your account
+4. **Monitor network activity** - Use network monitoring tools to see what data apps are sending
+
+### Reducing Tracking
+
+- Disable location services when not needed
+- Review and restrict app permissions regularly
+- Use privacy-focused browsers and search engines
+- Consider using a VPN for additional privacy
+- Review and disable advertising personalization in your accounts
+- Opt out of data collection where possible
+- Use privacy settings in social media and other services
+
+## My Device Is Being Monitored by Malware
+
+If malware is secretly recording your screen, taking photos, or listening through the microphone, one possible symptom is unusual overheating or battery drain. However, these are only warning signs, not definitive proof.
 
 Modern Android devices provide several privacy indicators:
 
@@ -27,7 +93,7 @@ Modern Android devices provide several privacy indicators:
 
 These indicators can help detect many common forms of spyware and eavesdropping malware.
 
-Can Malware Steal All of My Files?
+## Can Malware Steal All of My Files?
 
 On Android 11 and later, apps are restricted by scoped storage. By default, applications cannot freely access files outside their own private directories.
 
@@ -41,7 +107,7 @@ If you find an unfamiliar or suspicious application, revoke its access.
 
 Keep in mind that an app appearing legitimate does not guarantee that it is trustworthy.
 
-Isolating Untrusted Apps
+## Isolating Untrusted Apps
 
 If you must use an application that requires extensive storage permissions, consider isolating it from your personal files by using a separate work profile.
 
