@@ -1,5 +1,4 @@
-ccssd
-
+# ccssd
 Cucu's Self-Defense Guide is an open-source guide for ordinary users who want to protect their devices and accounts from common threats.
 
 It addresses practical questions such as:
