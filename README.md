@@ -10,24 +10,25 @@ You don't have to be a hacker, but you should understand basic security risks an
 
 ## Table of Contents
 
-- Am I Being Monitored?
-- Am I Being Tracked?
-- My Device Is Being Monitored by Malware
-- Can Malware Steal All of My Files?
-- Isolating Untrusted Apps
-- Security Fundamentals
+- [Account Compromise Detection](#account-compromise-detection)
+- [Understanding Tracking](#understanding-tracking)
+- [Malware Monitoring Behavior](#malware-monitoring-behavior)
+- [File Access and Malware Risk](#file-access-and-malware-risk)
+- [Isolating Untrusted Applications](#isolating-untrusted-applications)
+- [Security Fundamentals](#security-fundamentals)
+- [Final Note](#final-note)
 
 ---
 
-## Am I Being Monitored?
+## Account Compromise Detection
 
 Account compromise and device compromise are different problems. Start by checking accounts first.
 
 ### Checking Your Accounts
 
 - Review account activity logs (Google, Microsoft, Facebook, etc.)
-- Check connected devices and sessions
-- Review third-party app access
+- Check connected devices and active sessions
+- Review third-party application access
 - Verify recovery email and phone number
 
 ### Signs of Account Compromise
@@ -40,14 +41,14 @@ Account compromise and device compromise are different problems. Start by checki
 
 ---
 
-## Am I Being Tracked?
+## Understanding Tracking
 
-Tracking can occur through multiple layers: network, application, and account-level systems.
+Tracking can occur across multiple layers: network, application, and account systems.
 
 ### Common Tracking Methods
 
 **Location-based tracking**
-- GPS services
+- GPS location services
 - Cell tower triangulation
 - WiFi-based positioning
 - App-based location sharing
@@ -62,67 +63,67 @@ Tracking can occur through multiple layers: network, application, and account-le
 - Permission-based location access
 - Background telemetry
 - Device identifiers
-- Analytics SDKs embedded in apps
+- Embedded analytics SDKs
 
 ### Checking Tracking Exposure
 
-- Review app permissions regularly
-- Check location and privacy settings
-- Audit connected services and app authorizations
-- Use browser privacy settings and tracker blocking
+- Review application permissions regularly
+- Audit location and privacy settings
+- Review connected services and account access
+- Use browser privacy features and tracker blocking
 
 ### Reducing Tracking
 
 - Disable location services when not needed
-- Limit app permissions to minimum required
+- Restrict app permissions to minimum required
 - Use privacy-focused browsers and search engines
-- Disable ad personalization where possible
-- Review social media privacy settings periodically
+- Disable ad personalization settings
+- Periodically review social media privacy controls
 
 ---
 
-## My Device Is Being Monitored by Malware
+## Malware Monitoring Behavior
 
-Possible signs include unusual battery drain, overheating, or abnormal network activity. These are indicators, not proof.
+Possible signs of malware activity include unusual battery drain, overheating, or abnormal network usage. These are indicators, not proof of compromise.
 
 Modern Android systems provide built-in privacy indicators:
 
 - Camera and microphone usage indicators
-- Notifications for active recording on some devices
-- System-level permission prompts
+- System notifications for active recording (on supported devices)
+- Runtime permission prompts
 
-These features help detect common spyware behavior, but they are not complete guarantees of security.
+These mechanisms help detect common spyware behavior but do not guarantee full protection.
 
 ---
 
-## Can Malware Steal All of My Files?
+## File Access and Malware Risk
 
-On modern Android systems (Android 11+), storage access is restricted by scoped storage.
+On Android 11 and later, storage access is restricted using scoped storage.
 
 Applications cannot freely access all files by default.
 
-Some apps may request elevated storage permissions ("All files access"). These should be reviewed carefully.
+Some applications may request elevated storage permissions ("All files access"). These should be reviewed carefully.
 
-### Check storage access:
+### Check storage permissions:
 
 Settings → Privacy → Special App Access → All Files Access
 
-Remove permissions from applications you do not trust or recognize.
+Remove permissions for applications you do not trust or recognize.
 
 ---
 
-## Isolating Untrusted Apps
+## Isolating Untrusted Applications
 
-If you must use untrusted or high-permission applications, isolation can reduce risk.
+If you must use applications that require high permissions, isolation reduces exposure risk.
 
-Recommended approach:
+### Recommended approach:
 
 - Use a separate work profile
-- Keep personal data separate from untrusted apps
+- Keep personal and untrusted applications separated
 
-Tools such as Shelter can create isolated work profiles on Android.
+Tools such as Shelter can create isolated work profiles on Android devices.
 
-Isolation reduces exposure but does not eliminate risk.
+Isolation reduces risk but does not eliminate it.
 
 ---
 
@@ -137,10 +138,10 @@ In practice, users cannot reliably determine whether a specific vulnerability is
 - Minimize attack surface by installing only necessary software
 - Prefer trusted and maintained applications
 - Keep system and applications updated regularly
-- Limit permissions granted to applications
-- Reduce exposure to unknown or untrusted software
+- Limit application permissions
+- Avoid untrusted or unknown software sources
 
-These practices significantly reduce exposure to common threats but do not eliminate all risk.
+These practices significantly reduce exposure to common threats but do not eliminate risk.
 
 Security is context-dependent, and different users may adopt different threat models based on their needs.
 
@@ -148,4 +149,4 @@ Security is context-dependent, and different users may adopt different threat mo
 
 ## Final Note
 
-Security is not a fixed state but a continuous process of reducing exposure and managing risk.
+Security is not a fixed state but an ongoing process of reducing exposure and managing risk.
