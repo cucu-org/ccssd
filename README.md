@@ -2,121 +2,150 @@
 
 Cucu's Self-Defense Guide is an open-source guide for ordinary users who want to protect their devices and accounts from common threats.
 
-It addresses practical questions such as:
+It focuses on practical security hygiene rather than absolute guarantees.
 
-- Am I being monitored?
-- Has my device been compromised?
-- Is this app safe to install?
-- How do I recognize suspicious behavior?
+You don't have to be a hacker, but you should understand basic security risks and how to reduce them.
 
-«You don't have to be a hacker, but you should know when your device has been hacked.»
+---
 
 ## Table of Contents
 
-- [Am I Being Monitored?](#am-i-being-monitored)
-- [Am I Being Tracked?](#am-i-being-tracked)
-- [My Device Is Being Monitored by Malware](#my-device-is-being-monitored-by-malware)
-- [Can Malware Steal All of My Files?](#can-malware-steal-all-of-my-files)
-- [Isolating Untrusted Apps](#isolating-untrusted-apps)
-- [All software, including operating systems, has vulnerabilities. How can I determine which software is exploiting these vulnerabilities to attack me, and how can I prevent this from happening in advance?](#All-software,-including-operating-systems,-has-vulnerabilities.-How-can-I-determine-which-software-is-exploiting-these-vulnerabilities-to-attack-me,-and-how-can-I-prevent-this-from-happening-in-advance?]
+- Am I Being Monitored?
+- Am I Being Tracked?
+- My Device Is Being Monitored by Malware
+- Can Malware Steal All of My Files?
+- Isolating Untrusted Apps
+- Security Fundamentals
+
+---
 
 ## Am I Being Monitored?
 
-First, determine whether your online accounts are being accessed by someone else, or whether your device itself has been compromised. These are two different problems.
+Account compromise and device compromise are different problems. Start by checking accounts first.
 
 ### Checking Your Accounts
 
-To determine if your accounts are being accessed without authorization:
-
-1. **Review account activity logs** - Most services like Google, Facebook, and Microsoft provide security checkups and activity logs
-2. **Check connected devices and sessions** - Look for unfamiliar devices or locations accessing your accounts
-3. **Review connected apps** - Verify which third-party applications have access to your account
-4. **Check recovery options** - Ensure your email and phone number haven't been changed without your permission
+- Review account activity logs (Google, Microsoft, Facebook, etc.)
+- Check connected devices and sessions
+- Review third-party app access
+- Verify recovery email and phone number
 
 ### Signs of Account Compromise
 
-- Unexpected password reset emails
+- Password reset emails you did not request
 - Login attempts from unfamiliar locations
-- Changed security settings you didn't authorize
-- Friends reporting receiving messages from your account
-- Unfamiliar apps connected to your account
+- Security settings changed without authorization
+- Messages sent from your account that you did not send
+- Unknown applications connected to your account
+
+---
 
 ## Am I Being Tracked?
 
-Tracking can occur at multiple levels and through various methods. Understanding these will help you identify if you're being tracked.
+Tracking can occur through multiple layers: network, application, and account-level systems.
 
-### Digital Tracking Methods
+### Common Tracking Methods
 
-**Location Tracking:**
-- GPS tracking through your device's location services
-- Cell tower triangulation by your mobile carrier
-- WiFi-based location services
-- Tracking through social media check-ins and posts
+**Location-based tracking**
+- GPS services
+- Cell tower triangulation
+- WiFi-based positioning
+- App-based location sharing
 
-**Online Tracking:**
-- Website cookies and tracking pixels
+**Online tracking**
+- Cookies and tracking pixels
 - Browser fingerprinting
-- Advertising trackers across websites
-- Social media tracking across the web
+- Cross-site advertising networks
+- Social media tracking
 
-**App-Based Tracking:**
-- Apps requesting location permissions
-- Background location tracking even when the app is closed
-- Device identifiers being sent to tracking services
-- Analytics and telemetry in apps
+**App-based tracking**
+- Permission-based location access
+- Background telemetry
+- Device identifiers
+- Analytics SDKs embedded in apps
 
-### How to Check What's Tracking You
+### Checking Tracking Exposure
 
-1. **Review app permissions** - Check which apps have access to your location, contacts, camera, and microphone
-2. **Check privacy settings** - Review location sharing settings in your device settings and individual apps
-3. **Review connected services** - Check which apps and websites have permission to access your account
-4. **Monitor network activity** - Use network monitoring tools to see what data apps are sending
+- Review app permissions regularly
+- Check location and privacy settings
+- Audit connected services and app authorizations
+- Use browser privacy settings and tracker blocking
 
 ### Reducing Tracking
 
 - Disable location services when not needed
-- Review and restrict app permissions regularly
+- Limit app permissions to minimum required
 - Use privacy-focused browsers and search engines
-- Consider using a VPN for additional privacy
-- Review and disable advertising personalization in your accounts
-- Opt out of data collection where possible
-- Use privacy settings in social media and other services
+- Disable ad personalization where possible
+- Review social media privacy settings periodically
+
+---
 
 ## My Device Is Being Monitored by Malware
 
-If malware is secretly recording your screen, taking photos, or listening through the microphone, one possible symptom is unusual overheating or battery drain. However, these are only warning signs, not definitive proof.
+Possible signs include unusual battery drain, overheating, or abnormal network activity. These are indicators, not proof.
 
-Modern Android devices provide several privacy indicators:
+Modern Android systems provide built-in privacy indicators:
 
-- When an app accesses the camera, Android displays a camera indicator and, on some devices, a notification showing which app is using it.
-- The same applies to microphone access.
-- Some Android manufacturers also notify users when screen recording or screen capture is taking place.
+- Camera and microphone usage indicators
+- Notifications for active recording on some devices
+- System-level permission prompts
 
-These indicators can help detect many common forms of spyware and eavesdropping malware.
+These features help detect common spyware behavior, but they are not complete guarantees of security.
+
+---
 
 ## Can Malware Steal All of My Files?
 
-On Android 11 and later, apps are restricted by scoped storage. By default, applications cannot freely access files outside their own private directories.
+On modern Android systems (Android 11+), storage access is restricted by scoped storage.
 
-Apps that need broad access to storage must request the All Files Access permission. Therefore, if a malicious application is able to collect files across your device, it is likely that this permission has been granted.
+Applications cannot freely access all files by default.
 
-You can review which apps have this permission by navigating to:
+Some apps may request elevated storage permissions ("All files access"). These should be reviewed carefully.
+
+### Check storage access:
 
 Settings → Privacy → Special App Access → All Files Access
 
-If you find an unfamiliar or suspicious application, revoke its access.
+Remove permissions from applications you do not trust or recognize.
 
-Keep in mind that an app appearing legitimate does not guarantee that it is trustworthy.
+---
 
 ## Isolating Untrusted Apps
 
-If you must use an application that requires extensive storage permissions, consider isolating it from your personal files by using a separate work profile.
+If you must use untrusted or high-permission applications, isolation can reduce risk.
 
-A recommended tool for this purpose is Shelter, which creates an isolated workspace and helps reduce the risk of exposing personal data to untrusted applications.
+Recommended approach:
 
-«No single symptom proves that a device has been hacked. Overheating, battery drain, or unusual network activity are warning signs, not evidence.»
+- Use a separate work profile
+- Keep personal data separate from untrusted apps
 
+Tools such as Shelter can create isolated work profiles on Android.
 
-## All software, including operating systems, has vulnerabilities. How can I determine which software is exploiting these vulnerabilities to attack me, and how can I prevent this from happening in advance?
+Isolation reduces exposure but does not eliminate risk.
 
-Yes, no software is absolutely secure, including the system, kernel, and central processing unit. What we can do is minimize our attack surface exposure, install less software we don't trust, and update our system and software more frequently. Doing so will reduce risk in most cases. Nothing is absolute; you can still be attacked, but the probability will be lower. Instead of being constantly anxious, it's better to maintain a moderate level of vigilance after implementing security practices, regularly checking security news for things to watch out for. Many security experts do this, but most people don't equal everyone, and everyone's security model is different; generalizations cannot be made.
+---
+
+## Security Fundamentals
+
+All software, including operating systems, kernels, and central processing units, may contain vulnerabilities.
+
+In practice, users cannot reliably determine whether a specific vulnerability is being exploited against them.
+
+### Core security principles:
+
+- Minimize attack surface by installing only necessary software
+- Prefer trusted and maintained applications
+- Keep system and applications updated regularly
+- Limit permissions granted to applications
+- Reduce exposure to unknown or untrusted software
+
+These practices significantly reduce exposure to common threats but do not eliminate all risk.
+
+Security is context-dependent, and different users may adopt different threat models based on their needs.
+
+---
+
+## Final Note
+
+Security is not a fixed state but a continuous process of reducing exposure and managing risk.
