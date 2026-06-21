@@ -1,4 +1,5 @@
 # ccssd
+
 Cucu's Self-Defense Guide is an open-source guide for ordinary users who want to protect their devices and accounts from common threats.
 
 It addresses practical questions such as:
@@ -17,6 +18,7 @@ It addresses practical questions such as:
 - [My Device Is Being Monitored by Malware](#my-device-is-being-monitored-by-malware)
 - [Can Malware Steal All of My Files?](#can-malware-steal-all-of-my-files)
 - [Isolating Untrusted Apps](#isolating-untrusted-apps)
+- [All software, including operating systems, has vulnerabilities. How can I determine which software is exploiting these vulnerabilities to attack me, and how can I prevent this from happening in advance?](#All-software,-including-operating-systems,-has-vulnerabilities.-How-can-I-determine-which-software-is-exploiting-these-vulnerabilities-to-attack-me,-and-how-can-I-prevent-this-from-happening-in-advance?]
 
 ## Am I Being Monitored?
 
@@ -113,3 +115,8 @@ If you must use an application that requires extensive storage permissions, cons
 A recommended tool for this purpose is Shelter, which creates an isolated workspace and helps reduce the risk of exposing personal data to untrusted applications.
 
 «No single symptom proves that a device has been hacked. Overheating, battery drain, or unusual network activity are warning signs, not evidence.»
+
+
+## All software, including operating systems, has vulnerabilities. How can I determine which software is exploiting these vulnerabilities to attack me, and how can I prevent this from happening in advance?
+
+Yes, no software is absolutely secure, including the system, kernel, and central processing unit. What we can do is minimize our attack surface exposure, install less software we don't trust, and update our system and software more frequently. Doing so will reduce risk in most cases. Nothing is absolute; you can still be attacked, but the probability will be lower. Instead of being constantly anxious, it's better to maintain a moderate level of vigilance after implementing security practices, regularly checking security news for things to watch out for. Many security experts do this, but most people don't equal everyone, and everyone's security model is different; generalizations cannot be made.
